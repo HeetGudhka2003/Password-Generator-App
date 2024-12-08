@@ -1,4 +1,5 @@
 /* Global Styles */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -12,6 +13,7 @@ body {
 }
 
 /* Container */
+
 .container {
     background: linear-gradient(145deg, #ffffff, #f0f0f0);
     border-radius: 20px;
@@ -28,6 +30,7 @@ body {
 }
 
 /* Header */
+
 h1 {
     font-size: 2rem;
     color: #333;
@@ -46,6 +49,7 @@ h1 {
 }
 
 /* Output Section */
+
 .output {
     display: flex;
     align-items: center;
@@ -75,7 +79,7 @@ h1 {
     padding: 12px;
     cursor: pointer;
     border-radius: 0 12px 12px 0;
-    transition: background 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 #copyBtn:hover {
@@ -84,6 +88,7 @@ h1 {
 }
 
 /* Settings Section */
+
 .settings {
     text-align: left;
     margin-bottom: 25px;
@@ -148,6 +153,7 @@ input[type="number"]:focus {
 }
 
 /* Generate Button */
+
 .generate-btn {
     background: linear-gradient(135deg, #00f2fe, #007bff);
     border: none;
@@ -164,4 +170,98 @@ input[type="number"]:focus {
     background: linear-gradient(135deg, #007bff, #0056b3);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-3px);
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 1024px) {
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .output {
+        flex-direction: column;
+    }
+
+    #passwordDisplay {
+        border-radius: 12px;
+        margin-bottom: 15px;
+    }
+
+    #copyBtn {
+        border-radius: 12px;
+        width: 100%;
+    }
+
+    .length-selector {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input[type="number"] {
+        width: 100%;
+    }
+
+    .generate-btn {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1.2);
+    }
+
+    input[type="number"] {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .container {
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 0.85rem;
+    }
+
+    .generate-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
 }
